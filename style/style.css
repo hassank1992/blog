@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav-button.new-post-button {
+  position: fixed;
+  background-color: #004186;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  bottom: 100px;
+  right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 24px;
+  transition: all 0.25s ease;
+}
+
+.nav-button.new-post-button:hover {
+  background-color: #002349;
+}
+header {
+  height: 350px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.home header,
+.new-post header {
+  background-image: url(/assets/banner.jpeg);
+}
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+header > * {
+  z-index: 10;
+}
+.profile-image {
+  height: 100px;
+  width: 100px;
+  background-image: url(/assets/profile.jpg);
+  background-size: cover;
+  border-radius: 50%;
+}
+.profile-name {
+  font-size: 3em;
+  font-style: bold;
+}
+.subtext {
+  margin-top: 8px;
+}
+.main {
+  /* background-color: yellow; */
+
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+.main-container {
+  min-width: 600px;
+  max-width: 750px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.blog {
+  display: flex;
+  min-height: 200px;
+  background-color: white;
+  margin-top: 24px;
+
+  border-radius: 8px;
+
+  overflow: hidden;
+  border: 1px solid lightgray;
+}
+.blog:hover {
+  transform: translate3d(0, -5px, 0);
+  transition: all 0.25s ease;
+
+  box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.blog-details {
+  padding: 24px;
+  flex-basis: 75%;
+}
+.blog-image {
+  flex-basis: 25%;
+  background-size: cover;
+}
+
+.blog-date {
+  font-size: 11px;
+  font-weight: bold;
+  color: #929eaa;
+}
+.blog-title > h4 {
+  margin: 0px;
+}
+.blog-title {
+  margin-top: 12px;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #333;
+}
+
+.blog-content {
+  padding-top: 5px;
+  max-height: 66px;
+  line-height: 1.4;
+  font-weight: 400;
+  overflow: hidden;
+  color: #495057;
+}
+.post-link {
+  text-decoration: none;
+}
+footer {
+  min-height: 100px;
+  background-color: #eaecee70;
+  color: #929eaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 14px;
+}
+.navigation a {
+  text-decoration: none;
+  height: 30px;
+  width: 80px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: 5px 8px;
+
+  color: blue;
+}
+a.post-link {
+  text-decoration: none;
+}
+.add-post {
+  transition: all;
+}
